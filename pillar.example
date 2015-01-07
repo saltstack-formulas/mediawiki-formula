@@ -1,0 +1,11 @@
+mediawiki:
+  sitename: Sample Wiki
+  metanamespace: Sample_Wiki
+  secretkey: aadc9c5270167fd9517b212bf0bceba63b32830ba82862ce5a172ad47fbfa601
+  upgradekey: 25b110807fb335a5
+  emergencycontact: noreply@example.com
+  passwordsender: noreply@example.com
+  scriptpath: /wiki
+  db_user: Sample User
+  db_pass: ''
+  db_email: sample@example.com
