@@ -1,6 +1,6 @@
-{% db_user = salt['pillar.get']('mediawiki:db_user', 'Sample User') %}
-{% db_pass = salt['pillar.get']('mediawiki:db_pass', '') %}
-{% db_email = salt['pillar.get']('mediawiki:db_email', 'sample@example.com') %}
+{% set db_user = salt['pillar.get']('mediawiki:db_user', 'Sample User') %}
+{% set db_pass = salt['pillar.get']('mediawiki:db_pass', '') %}
+{% set db_email = salt['pillar.get']('mediawiki:db_email', 'sample@example.com') %}
 -- MySQL dump 10.13  Distrib 5.1.73, for redhat-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: my_wiki

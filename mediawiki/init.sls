@@ -50,6 +50,7 @@ mediawiki-users-schema:
   file.managed:
     - name: /root/mediawiki-users.sql
     - source: salt://mediawiki/mediawiki-users.sql
+    - template: jinja
 
 mediawiki-db:
   mysql_database.present:
