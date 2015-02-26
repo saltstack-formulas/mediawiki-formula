@@ -3,7 +3,7 @@ mediawiki:
     - name: mediawiki119
   file.managed:
     - name: /etc/httpd/conf.d/mediawiki.conf
-    - source: salt://mediawiki.conf
+    - source: salt://mediawiki/mediawiki.conf
     - mode: 644
     - user: root
     - group: root
@@ -12,7 +12,7 @@ mediawiki:
 
 mediawiki-config:
   file.managed:
-    - source: salt://LocalSettings.php
+    - source: salt://mediawiki/LocalSettings.php
     - name: /var/www/mediawiki119/LocalSettings.php
     - require:
       - file: mediawiki
@@ -44,12 +44,12 @@ mysql-python:
 mediawiki-schema:
   file.managed:
     - name: /root/mediawiki.sql
-    - source: salt://mediawiki.sql
+    - source: salt://mediawiki/mediawiki.sql
 
 mediawiki-users-schema:
   file.managed:
     - name: /root/mediawiki-users.sql
-    - source: salt://mediawiki-users.sql
+    - source: salt://mediawiki/mediawiki-users.sql
 
 mediawiki-db:
   mysql_database.present:
