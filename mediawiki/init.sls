@@ -4,6 +4,7 @@ mediawiki:
   file.managed:
     - name: /etc/httpd/conf.d/mediawiki.conf
     - source: salt://mediawiki/mediawiki.conf
+    - template: jinja
     - mode: 644
     - user: root
     - group: root
@@ -14,6 +15,7 @@ mediawiki-config:
   file.managed:
     - source: salt://mediawiki/LocalSettings.php
     - name: /var/www/mediawiki119/LocalSettings.php
+    - template: jinja
     - require:
       - file: mediawiki
 
