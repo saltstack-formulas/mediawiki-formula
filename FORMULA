@@ -1,0 +1,8 @@
+name: mediawiki
+maintainer: SaltStack Formulas
+os: RedHat
+os_family: RedHat
+version: 201506
+release: 2
+summary: Formula for MediaWiki
+description: Formula for MediaWiki
